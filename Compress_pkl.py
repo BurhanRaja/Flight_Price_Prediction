@@ -1,6 +1,6 @@
 # import pickle
 # data=pickle.load(open("Price_Regression.pkl","rb"))
-# output=open("write.txt","w")
+# output=open("Model.txt","w")
 # output.write(str(data))
 # output.flush()
 # output.close()

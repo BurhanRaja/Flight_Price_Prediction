@@ -1,9 +1,13 @@
 from flask import Flask, request, render_template
+import joblib
 import pandas as pd
+import gzip
+import joblib
 import pickle
 import os
 import flasgger
 from flasgger import Swagger
+import gzip
 
 PEOPLE_FOLDER = os.path.join('static', 'image')
 
@@ -12,7 +16,8 @@ Swagger(app)
 
 app.config['UPLOAD_FOLDER'] = PEOPLE_FOLDER
 
-regressor = pickle.load( open('Price_Regression.pkl', 'rb'))
+with open('Price_Regression.pkl', 'rb') as f:
+    regressor = joblib.load(f)
 
 @app.route('/')
 def home():
@@ -317,7 +322,6 @@ def predict():
             Multiple_carriers,
             Multiple_carriers_Premium_economy,
             SpiceJet,
-            Trujet,
             Vistara,
             Vistara_Premium_economy,
             s_Chennai,
