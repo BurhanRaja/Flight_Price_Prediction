@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fare Price Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+ <!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-1 ms-2 fs-2">Flight Fare Price</span>
+    </div>
+  </nav>
+  <img class="aiimg" src="{{ user_image }}" alt="User Image" >
+  <div class="text">
+    <p>Welcome to</p>
+  </div>
+  <div class="text-1">
+    <p>Flight Fare Price Prediction Project</p>
+  </div>
+  <div class="text-2">
+    <p>Scroll Down </p>
+  </div>
+
+<section>
+  <div class="container">
+
+    <form action="\predict" method="POST">
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title font-monospace">Departure_Date</h5>
+                        <!-- Departure -->
+                        <br>
+                        <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title font-monospace">Arrival_Date</h5>
+                        <!-- Arrival -->
+                        <br>
+                        <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Source -->
+                        <h5 class="card-title font-monospace">Source</h5>
+                        <br>
+                        <select name="Source" id="Source" required="required">
+                            <option value="Delhi">Delhi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value=1>Banglore</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title font-monospace">Destination</h5>
+                        <!-- Destination -->
+                        <br>
+                        <select name="Destination" id="Destination" required="required">
+                            <option value="Cochin">Cochin</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="New Delhi">New Delhi</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value=1>Banglore</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title font-monospace">Total_Stops</h5>
+                        <!-- Total Stops -->
+                        <br>
+                        <select name="stops" required="required">
+                            <option value="0">Non-Stop</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title font-monospace">Airline_Name</h5>
+                        <!-- Airline -->
+                        <br>
+                        <select name="airline" id="airline" required="required">
+                            <option value="Jet Airways">Jet Airways</option>
+                            <option value="IndiGo">IndiGo</option>
+                            <option value="Air India">Air India</option>
+                            <option value="Multiple carriers">Multiple carriers</option>
+                            <option value="SpiceJet">SpiceJet</option>
+                            <option value="Vistara">Vistara</option>
+                            <option value="Air Asia">Air Asia</option>
+                            <option value="GoAir">GoAir</option>
+                            <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                            </option>
+                            <option value="Jet Airways Business">Jet Airways Business</option>
+                            <option value="Vistara Premium economy">Vistara Premium economy</option>
+                            <!-- <option value="Trujet">Trujet</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+  <br>
+  <!-- Submit -->
+  <input type="submit" value="Submit" class="btn btn-secondary">
+</form>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+<div class="contact2">
+<p class="copyright">©2021 Burhanuddin Raja</p>
+</div>
+</div>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
