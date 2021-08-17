@@ -1,1 +1,0 @@
-RandomForestRegressor(max_depth=25, max_features='sqrt', n_estimators=900)
