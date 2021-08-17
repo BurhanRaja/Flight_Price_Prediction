@@ -14,7 +14,9 @@ This project on Flight Fare Price Prediction is based on the flask web app. It i
 
 ## Description
 ExtraTreeRegressor is used to get the best Features from the dataset.
+
 K-cross validation is used to get the best model from SVM, DecisionTree and Random Forest.
+
 Here, Random Forest Regression is used as it is the best fit for this regression problem.
 
 ## Motivation
@@ -24,25 +26,28 @@ The motivation behind was to get the hands on experience and to know that how th
 Link :- https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh
 
 ## Installation
-install python
+### install python:-
+
 conda install python==3.9.6
 
-create env
+### create env:-
+
 conda create --name flightenv
 
-create and add list in requirements.txt file
+### create and add list in requirements.txt file:-
+
 conda list e > requirements.txt
 
 ## Demo
-Welcome page
+### Welcome page
 ![Screenshot (7)](https://user-images.githubusercontent.com/76507095/129676813-33539395-1b2f-4e18-a5ed-501ef3ff1cd9.png)
 
 Scroll down
 
-Input page
+### Input page
 ![Screenshot (9)](https://user-images.githubusercontent.com/76507095/129676878-7a8199ef-1f8b-4b9a-9bf3-8ee060f42d9e.png)
 
-Output page
+### Output page
 ![Screenshot (8)](https://user-images.githubusercontent.com/76507095/129676943-fb13238d-57b8-4542-8cca-c6b4da56fb88.png)
 
 
