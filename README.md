@@ -58,3 +58,4 @@ As you can see on the right section in Environments, the model is active but I'm
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/76507095/129676282-de84d6fb-9188-48bd-be5a-00e70d401a50.png)
 
+# Please, comment if you have a solution to the R15 memory base error in Heroku!!
