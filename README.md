@@ -71,7 +71,7 @@ conda list e > requirements.txt
 |--- templates
 │    |--- home.html
 |--- Compress_pkl.py
-|--- Prediction Test set.txt
+|--- Prediction of Test set.txt
 |--- Procfile
 |--- README.md
 |--- app.py
