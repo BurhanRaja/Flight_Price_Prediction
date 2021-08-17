@@ -53,5 +53,8 @@ Scroll down
 
 ## Deployment
 Here, I am able to deploy the model but not able to start the link. There is a problem of R15 memory issues, which I don't know how to solve.
+
+As you can see on the right section in Environments, the model is active but I'm not able to start
+
 ![Screenshot (2)](https://user-images.githubusercontent.com/76507095/129676282-de84d6fb-9188-48bd-be5a-00e70d401a50.png)
 
