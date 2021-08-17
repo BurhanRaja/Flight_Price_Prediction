@@ -68,9 +68,10 @@ conda list e > requirements.txt
 │    |--- css
 |    |--- image
 |         |--- flight-1.jpg       
-|--- template
+|--- templates
 │    |--- home.html
 |--- Compress_pkl.py
+|--- Prediction Test set.txt
 |--- Procfile
 |--- README.md
 |--- app.py
