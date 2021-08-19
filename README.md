@@ -70,6 +70,7 @@ conda list e > requirements.txt
 |         |--- flight-1.jpg       
 |--- templates
 │    |--- home.html
+|    |--- predicted.html
 |--- Compress_pkl.py
 |--- Prediction of Test set.txt
 |--- Procfile
