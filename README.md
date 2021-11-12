@@ -13,6 +13,7 @@
 
 ## Overview
 This project on Flight Fare Price Prediction is based on the flask web app. It is deployed in Heroku.
+Link to visit app:- https://projectpriceprediction.herokuapp.com/
 
 
 ## Description
@@ -95,4 +96,4 @@ Scroll down
 
 
 ## Deployment
-#### (Note: I am not able to deploy my app because of the error R15 which is a memory base error. I am not able to find resources to resolve this error.)
+I have deployed my app on the Heroku platform.
